@@ -29,7 +29,6 @@ function App() {
       const dataUrl = canvas.toDataURL("image/png");
       setSelectedImage(dataUrl);
       
-      // Stop the video stream
       stream.getTracks().forEach(track => track.stop());
     } catch (err) {
       console.error("Error accessing the camera: ", err);
